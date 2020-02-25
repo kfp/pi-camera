@@ -1,0 +1,11 @@
+[Unit]
+Description=Camera streamer
+
+[Service]
+ExecStart=python3 /usr/local/bin/camera.py
+Restart=on-abort
+User=pi
+Environment='CAMERA_NAME=A Camera'
+
+[Install]
+WantedBy=multi-user.target
