@@ -6,6 +6,7 @@ import io
 import picamera
 import logging
 import socketserver
+import os
 from threading import Condition
 from http import server
 
